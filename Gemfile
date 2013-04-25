@@ -5,6 +5,10 @@ gem 'rails', '4.0.0.beta1'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.0.1'
+gem 'protected_attributes'
+gem 'devise'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 
 group :production do
 	gem 'pg'

@@ -1,2 +1,9 @@
-<h1>Welcome to Scapeway.</h1>
-<p>Connect with fellow travelers.</p>
+<% if user_signed_in? %>
+<h2>You've entered the member's area.</h2>
+
+<% else %>
+	<h3 class="welcome">Welcome to Scapeway.</h3>
+	<h4 class="welcome">Connect with fellow travelers, make new friends,<br>
+	and share memorable experiences.</h4>
+	<p id="signup"><%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-large" %></p>
+<% end %>
